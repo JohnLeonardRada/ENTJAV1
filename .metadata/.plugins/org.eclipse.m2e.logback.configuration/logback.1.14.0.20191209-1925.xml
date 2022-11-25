@@ -1,0 +1,35 @@
+Override public String intercept(ActionInvocation invocation) throws Exception {
+
+        ActionConfig config = invocation.getProxy().getConfig();
+        ActionContext ac = invocation.getInvocationContext();
+        Object action = invocation.getAction();
+
+        // get the action's parameters
+        final Map<String, String> parameters = config.getParams();
+
+        if (parameters.containsKey(aliasesKey)) {
+
+            String aliasExpression = parameters.get(aliasesKey);
+            ValueStack stack = ac.getValueStack();
+            Object obj = stack.findValue(aliasExpression);
+
+            if (obj != null && obj instanceof Map) {
+                //get secure stack
+                ValueStack newStack = valueStackFactory.createValueStack(stack);
+                boolean clearableStack = newStack instanceof ClearableValueStack;
+                if (clearableStack) {
+                    //if the stack's context can be cleared, do that to prevent OGNL
+                    //from having access to objects in the stack, see XW-641
+                    ((ClearableValueStack)newStack).clearContextValues();
+                    Map<String, Object> context = newStack.getContext();
+                    ReflectionContextState.setCreatingNullObjects(context, true);
+                    ReflectionContextState.setDenyMethodExecution(context, true);
+                    ReflectionContextState.setReportingConversionErrors(context, true);
+
+                    //keep locale from original context
+                    context.put(ActionContext.LOCALE, stack.getContext().get(ActionContext.LOCALE));
+                }
+
+                // override
+                Map aliases = (Map) obj;
+                for (Obje

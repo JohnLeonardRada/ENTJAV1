@@ -1,0 +1,4 @@
+127.0.0.1 - - [23/Sep/2020:20:10:32 +0800] "GET / HTTP/1.1" 404 748
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:20:10:33 +0800] "GET /www.forex.bpi.com.ph/ HTTP/1.1" 200 856
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:20:10:33 +0800] "GET /www.forex.bpi.com.ph/image/bpiforex.jpg HTTP/1.1" 200 85266
+0:0:0:0:0:0:0:1 - - [23/Sep/2020:20:11:24 +0800] "POST /www.forex.bpi.com.ph/convertforex.jsp HTTP/1.1" 500 2639

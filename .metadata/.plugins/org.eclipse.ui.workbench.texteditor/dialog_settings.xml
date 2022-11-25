@@ -1,0 +1,18 @@
+i18n resource bundle.
+ * <p/>
+ * <p/>However, sometimes you may wish to override this message on a per-field basis. You can do this by adding an i18n
+ * key associated with just your action (Action.properties) using the pattern <b>invalid.fieldvalue.xxx</b>, where xxx
+ * is the field name.
+ * <p/>
+ * <p/>It is important to know that none of these errors are actually reported directly. Rather, they are added to a map
+ * called <i>conversionErrors</i> in the ActionContext. There are several ways this map can then be accessed and the
+ * errors can be reported accordingly.
+ * <p/>
+ * <!-- END SNIPPET: error-reporting -->
+ *
+ * @author <a href="mailto:plightbo@gmail.com">Pat Lightbody</a>
+ * @author Rainer Hermanns
+ * @see com.opensymphony.xwork2.conversion.impl.XWorkConverter
+ * @deprecated Since XWork 2.0.4, the implementation of XWorkConverter handles the processing of annotations.
+ */
+@Deprecated public class

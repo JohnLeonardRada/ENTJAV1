@@ -1,0 +1,21 @@
+tParameterMap(new HashMap());
+        req.setupGetRequestURI("/my/namespace/actionName!add.action");
+        req.setupGetServletPath("/my/namespace/actionName!add.action");
+        req.setupGetAttribute(null);
+        req.addExpectedGetAttributeName("javax.servlet.include.servlet_path");
+
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        ActionMapping mapping = mapper.getMapping(req, configManager);
+
+        assertEquals("/my/namespace/actionName!add.action", mapper.getUriFromActionMapping(mapping));
+    }
+
+    public void testGetUriWithOriginalExtension() throws Exception {
+        ActionMapping mapping = new ActionMapping("actionName", "/ns", null, new HashMap());
+
+        ActionMapping orig = new ActionMapping();
+        orig.setExtension("foo");
+        ActionContext.getContext().put(ServletActionContext.ACTION_MAPPING, orig);
+
+        DefaultActionMapper mapper = new DefaultActionMapper();
+        assertEquals("/ns/actionName.fo

@@ -1,0 +1,508 @@
+tle="class or interface in javax.persistence">Query</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#executeUpdate()" title="class or interface in javax.persistence">executeUpdate</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getFirstResult()" title="class or interface in javax.persistence">getFirstResult</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getFlushMode()" title="class or interface in javax.persistence">getFlushMode</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getHints()" title="class or interface in javax.persistence">getHints</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getMaxResults()" title="class or interface in javax.persistence">getMaxResults</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameterValue(int)" title="class or interface in javax.persistence">getParameterValue</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameterValue(javax.persistence.Parameter)" title="class or interface in javax.persistence">getParameterValue</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameterValue(java.lang.String)" title="class or interface in javax.persistence">getParameterValue</A>, <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#isBound(javax.persistence.Parameter)" title="class or interface in javax.persistence">isBound</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="QueryImpl(org.hibernate.Query, org.hibernate.ejb.AbstractEntityManagerImpl)"><!-- --></A><H3>
+QueryImpl</H3>
+<PRE>
+public <B>QueryImpl</B>(<A HREF="../../../org/hibernate/Query.html" title="interface in org.hibernate">Query</A>&nbsp;query,
+                 <A HREF="../../../org/hibernate/ejb/AbstractEntityManagerImpl.html" title="class in org.hibernate.ejb">AbstractEntityManagerImpl</A>&nbsp;em)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="QueryImpl(org.hibernate.Query, org.hibernate.ejb.AbstractEntityManagerImpl, java.util.Map)"><!-- --></A><H3>
+QueryImpl</H3>
+<PRE>
+public <B>QueryImpl</B>(<A HREF="../../../org/hibernate/Query.html" title="interface in org.hibernate">Query</A>&nbsp;query,
+                 <A HREF="../../../org/hibernate/ejb/AbstractEntityManagerImpl.html" title="class in org.hibernate.ejb">AbstractEntityManagerImpl</A>&nbsp;em,
+                 <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&gt;&nbsp;namedParameterTypeRedefinitions)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getHibernateQuery()"><!-- --></A><H3>
+getHibernateQuery</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/Query.html" title="interface in org.hibernate">Query</A> <B>getHibernateQuery</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/HibernateQuery.html#getHibernateQuery()">getHibernateQuery</A></CODE> in interface <CODE><A HREF="../../../org/hibernate/ejb/HibernateQuery.html" title="interface in org.hibernate.ejb">HibernateQuery</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="internalExecuteUpdate()"><!-- --></A><H3>
+internalExecuteUpdate</H3>
+<PRE>
+protected int <B>internalExecuteUpdate</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#internalExecuteUpdate()">AbstractQueryImpl</A></CODE></B></DD>
+<DD>Actually execute the update; all pre-requisites have been checked.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#internalExecuteUpdate()">internalExecuteUpdate</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The number of "affected rows".</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyMaxResults(int)"><!-- --></A><H3>
+applyMaxResults</H3>
+<PRE>
+protected void <B>applyMaxResults</B>(int&nbsp;maxResults)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyMaxResults(int)">AbstractQueryImpl</A></CODE></B></DD>
+<DD>Apply the given max results value.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyMaxResults(int)">applyMaxResults</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxResults</CODE> - The specified max results</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyFirstResult(int)"><!-- --></A><H3>
+applyFirstResult</H3>
+<PRE>
+protected void <B>applyFirstResult</B>(int&nbsp;firstResult)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyFirstResult(int)">AbstractQueryImpl</A></CODE></B></DD>
+<DD>Apply the given first-result value.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyFirstResult(int)">applyFirstResult</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>firstResult</CODE> - The specified first-result value.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyTimeout(int)"><!-- --></A><H3>
+applyTimeout</H3>
+<PRE>
+protected void <B>applyTimeout</B>(int&nbsp;timeout)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyTimeout(int)">applyTimeout</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyComment(java.lang.String)"><!-- --></A><H3>
+applyComment</H3>
+<PRE>
+protected void <B>applyComment</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;comment)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyComment(java.lang.String)">applyComment</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyFetchSize(int)"><!-- --></A><H3>
+applyFetchSize</H3>
+<PRE>
+protected void <B>applyFetchSize</B>(int&nbsp;fetchSize)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyFetchSize(int)">applyFetchSize</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyCacheable(boolean)"><!-- --></A><H3>
+applyCacheable</H3>
+<PRE>
+protected void <B>applyCacheable</B>(boolean&nbsp;isCacheable)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyCacheable(boolean)">applyCacheable</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyCacheRegion(java.lang.String)"><!-- --></A><H3>
+applyCacheRegion</H3>
+<PRE>
+protected void <B>applyCacheRegion</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;regionName)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyCacheRegion(java.lang.String)">applyCacheRegion</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyReadOnly(boolean)"><!-- --></A><H3>
+applyReadOnly</H3>
+<PRE>
+protected void <B>applyReadOnly</B>(boolean&nbsp;isReadOnly)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyReadOnly(boolean)">applyReadOnly</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyCacheMode(org.hibernate.CacheMode)"><!-- --></A><H3>
+applyCacheMode</H3>
+<PRE>
+protected void <B>applyCacheMode</B>(<A HREF="../../../org/hibernate/CacheMode.html" title="class in org.hibernate">CacheMode</A>&nbsp;cacheMode)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyCacheMode(org.hibernate.CacheMode)">applyCacheMode</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyFlushMode(org.hibernate.FlushMode)"><!-- --></A><H3>
+applyFlushMode</H3>
+<PRE>
+protected void <B>applyFlushMode</B>(<A HREF="../../../org/hibernate/FlushMode.html" title="class in org.hibernate">FlushMode</A>&nbsp;flushMode)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyFlushMode(org.hibernate.FlushMode)">applyFlushMode</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="canApplyLockModes()"><!-- --></A><H3>
+canApplyLockModes</H3>
+<PRE>
+protected boolean <B>canApplyLockModes</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#canApplyLockModes()">canApplyLockModes</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="applyAliasSpecificLockMode(java.lang.String, org.hibernate.LockMode)"><!-- --></A><H3>
+applyAliasSpecificLockMode</H3>
+<PRE>
+protected void <B>applyAliasSpecificLockMode</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;alias,
+                                          <A HREF="../../../org/hibernate/LockMode.html" title="class in org.hibernate">LockMode</A>&nbsp;lockMode)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html#applyAliasSpecificLockMode(java.lang.String, org.hibernate.LockMode)">applyAliasSpecificLockMode</A></CODE> in class <CODE><A HREF="../../../org/hibernate/ejb/AbstractQueryImpl.html" title="class in org.hibernate.ejb">AbstractQueryImpl</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResultList()"><!-- --></A><H3>
+getResultList</H3>
+<PRE>
+public <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>getResultList</B>()</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getResultList()" title="class or interface in javax.persistence">getResultList</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#getResultList()" title="class or interface in javax.persistence">getResultList</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSingleResult()"><!-- --></A><H3>
+getSingleResult</H3>
+<PRE>
+public <A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A> <B>getSingleResult</B>()</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getSingleResult()" title="class or interface in javax.persistence">getSingleResult</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#getSingleResult()" title="class or interface in javax.persistence">getSingleResult</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(javax.persistence.Parameter,java.lang.Object)"><!-- --></A><A NAME="setParameter(javax.persistence.Parameter, T)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public &lt;T&gt; <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;T&gt;&nbsp;param,
+                                      T&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(javax.persistence.Parameter, T)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(javax.persistence.Parameter, T)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(javax.persistence.Parameter, java.util.Date, javax.persistence.TemporalType)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</A>&gt;&nbsp;param,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</A>&nbsp;value,
+                                  <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TemporalType.html?is-external=true" title="class or interface in javax.persistence">TemporalType</A>&nbsp;temporalType)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(javax.persistence.Parameter, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(javax.persistence.Parameter, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(javax.persistence.Parameter, java.util.Calendar, javax.persistence.TemporalType)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</A>&gt;&nbsp;param,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</A>&nbsp;value,
+                                  <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TemporalType.html?is-external=true" title="class or interface in javax.persistence">TemporalType</A>&nbsp;temporalType)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(javax.persistence.Parameter, java.util.Calendar, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(javax.persistence.Parameter, java.util.Calendar, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(java.lang.String, java.lang.Object)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;value)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(java.lang.String, java.lang.Object)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(java.lang.String, java.lang.Object)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(java.lang.String, java.util.Date, javax.persistence.TemporalType)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</A>&nbsp;value,
+                                  <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TemporalType.html?is-external=true" title="class or interface in javax.persistence">TemporalType</A>&nbsp;temporalType)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(java.lang.String, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(java.lang.String, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(java.lang.String, java.util.Calendar, javax.persistence.TemporalType)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</A>&nbsp;value,
+                                  <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TemporalType.html?is-external=true" title="class or interface in javax.persistence">TemporalType</A>&nbsp;temporalType)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(java.lang.String, java.util.Calendar, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(java.lang.String, java.util.Calendar, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(int, java.lang.Object)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(int&nbsp;position,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;value)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(int, java.lang.Object)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(int, java.lang.Object)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(int, java.util.Date, javax.persistence.TemporalType)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(int&nbsp;position,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</A>&nbsp;value,
+                                  <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TemporalType.html?is-external=true" title="class or interface in javax.persistence">TemporalType</A>&nbsp;temporalType)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(int, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(int, java.util.Date, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setParameter(int, java.util.Calendar, javax.persistence.TemporalType)"><!-- --></A><H3>
+setParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt; <B>setParameter</B>(int&nbsp;position,
+                                  <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html?is-external=true" title="class or interface in java.util">Calendar</A>&nbsp;value,
+                                  <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TemporalType.html?is-external=true" title="class or interface in javax.persistence">TemporalType</A>&nbsp;temporalType)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#setParameter(int, java.util.Calendar, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true#setParameter(int, java.util.Calendar, javax.persistence.TemporalType)" title="class or interface in javax.persistence">setParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/TypedQuery.html?is-external=true" title="class or interface in javax.persistence">TypedQuery</A>&lt;<A HREF="../../../org/hibernate/ejb/QueryImpl.html" title="type parameter in QueryImpl">X</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameters()"><!-- --></A><H3>
+getParameters</H3>
+<PRE>
+public <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;?&gt;&gt; <B>getParameters</B>()</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameters()" title="class or interface in javax.persistence">getParameters</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameter(java.lang.String)"><!-- --></A><H3>
+getParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;?&gt; <B>getParameter</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameter(java.lang.String)" title="class or interface in javax.persistence">getParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameter(int)"><!-- --></A><H3>
+getParameter</H3>
+<PRE>
+public <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;?&gt; <B>getParameter</B>(int&nbsp;position)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameter(int)" title="class or interface in javax.persistence">getParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameter(java.lang.String, java.lang.Class)"><!-- --></A><H3>
+getParameter</H3>
+<PRE>
+public &lt;T&gt; <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;T&gt; <B>getParameter</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                                     <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;type)</PRE>
+<DL>
+<DD>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true#getParameter(java.lang.String, java.lang.Class)" title="class or interface in javax.persistence">getParameter</A></CODE> in interface <CODE><A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Query.html?is-external=true" title="class or interface in javax.persistence">Query</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParameter(int, java.lang.Class)"><!-- --></A><H3>
+getParameter</H3>
+<PRE>
+public &lt;T&gt; <A HREF="http://java.sun.com/javaee/5/docs/api/javax/persistence/Parameter.html?is-external=true" title="class or interface in javax.persistence">Parameter</A>&lt;T&gt; <B>getParameter</B>(int&nbsp;posit

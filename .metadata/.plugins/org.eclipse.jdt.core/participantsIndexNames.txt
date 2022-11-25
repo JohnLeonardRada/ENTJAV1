@@ -1,0 +1,15 @@
+INDEX VERSION 1.131
+C:\Users\user\Desktop\Leonard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\575422197.index
+\Code23-ENTJAV1-Scripting-Elements-Forex-HTTP-Get-Method-Directive-Page-Import-JavaBean\src
+C:\Users\user\Desktop\Leonard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1304411145.index
+\Code22-ENTJAV1-Scripting-Elements-Forex-HTTP-Get-Method\src
+C:\Users\user\Desktop\Leonard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\611196055.index
+\Code24-ENTJAV1-Scripting-Elements-Forex-HTTP-POST-Method-Directive-Page-Import-JavaBean\src
+C:\Users\user\Desktop\ENTJAV1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3597197399.index
+\Code24-ENTJAV1-Scripting-Elements-Forex-HTTP-POST-Method-Directive-Page-Import-JavaBean\src
+C:\Users\user\Desktop\Leonard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1912123261.index
+\Code21-ENTJAV1-JSP-Concepts-HelloWorld\src
+C:\Users\user\Desktop\Leonard\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3597197399.index
+\Code24-ENTJAV1-Scripting-Elements-Forex-HTTP-POST-Method-Directive-Page-Import-JavaBean\src
+C:\Users\user\Desktop\ENTJAV1\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\575422197.index
+\Code23-ENTJAV1-Scripting-Elements-Forex-HTTP-Get-Method-Directive-Page-Import-JavaBean\src

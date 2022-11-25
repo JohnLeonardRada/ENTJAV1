@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Code08-ENTJAV1-ServletConfig-Version3Dot()">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="Code08-ENTJAV1-ServletConfig"/>
+        <property name="java-output-path" value="/Code08-ENTJAV1-ServletConfig-Version3Dot()/build/classes"/>
+    </wb-module>
+</project-modules>

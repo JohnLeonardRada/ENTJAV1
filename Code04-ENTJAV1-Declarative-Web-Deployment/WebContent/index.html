@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Grade Computation using on web.xml Deployment Descriptor</title>
+</head>
+
+<body>
+	<h2>Grade Computation using on web.xml Deployment Descriptor</h2>
+	<fieldset>
+		<legend>Grade Compute Form</legend>
+		<form action = 'computeGrade.action' method="POST">
+		
+			<p>Enter Student ID:
+				<input type = 'text' name = 'id' size = '15' required = "required"/>
+			</p>
+			
+			<p>Enter Name:
+				<input type = 'text' name = 'name' size = '35' required = "required"/>
+			</p>
+			
+			<p>Enter Midterm Grade:
+				<input type = 'text' name = 'midterm' min = '1' max = '100' required = "required"/>
+			</p>
+			
+			<p>Enter Pre-Final Grade:
+				<input type = 'text' name = 'preFinal' min = '1' max = '100' required = "required"/>
+			</p>
+			
+			<p>
+				<input type = 'submit' value = 'Compute Final Grade'/>&nbsp;&nbsp;&nbsp;
+				<input type = 'reset'/>
+			</p>
+			
+		</form>	
+	</fieldset>
+</body>
+</html>

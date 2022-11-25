@@ -1,0 +1,54 @@
+xwork2.validator.DefaultValidatorFactory;
+import com.opensymphony.xwork2.validator.DefaultValidatorFileParser;
+import com.opensymphony.xwork2.validator.ValidatorFactory;
+import com.opensymphony.xwork2.validator.ValidatorFileParser;
+import ognl.MethodAccessor;
+import ognl.PropertyAccessor;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class XWorkConfigurationProvider implements ConfigurationProvider {
+
+    public void destroy() {
+    }
+
+    public void init(Configuration configuration) throws ConfigurationException {
+    }
+
+    public void loadPackages() throws ConfigurationException {
+    }
+
+    public boolean needsReload() {
+        return false;
+    }
+
+    public void register(ContainerBuilder builder, LocatableProperties props)
+            throws ConfigurationException {
+
+        builder.factory(com.opensymphony.xwork2.ObjectFactory.class)
+                .factory(ActionProxyFactory.class, DefaultActionProxyFactory.class, Scope.SINGLETON)
+                .factory(ObjectTypeDeterminer.class, DefaultObjectTypeDeterminer.class, Scope.SINGLETON)
+
+                .factory(XWorkConverter.class, Scope.SINGLETON)
+                .factory(XWorkBasicConverter.class, Scope.SINGLETON)
+                .factory(ConversionPropertiesProcessor.class, DefaultConversionPropertiesProcessor.class, Scope.SINGLETON)
+                .factory(ConversionFileProcessor.class, DefaultConversionFileProcessor.class, Scope.SINGLETON)
+                .factory(ConversionAnnotationProcessor.class, DefaultConversionAnnotationProcessor.class, Scope.SINGLETON)
+                .factory(TypeConverterCreator.class, DefaultTypeConverterCreator.class, Scope.SINGLETON)
+                .factory(TypeConverterHolder.class, DefaultTypeConverterHolder.class, Scope.SINGLETON)
+
+                .factory(FileManager.class, "system", DefaultFileManager.class, Scope.SINGLETON)
+                .factory(FileManagerFactory.class, DefaultFileManagerFactory.class, Scope.SINGLETON)
+                .factory(ValueStackFactory.class, OgnlValueStackFactory.class, Scope.SINGLETON)
+                .factory(ValidatorFactory.class, DefaultValidatorFactory.class, Scope.SINGLETON)
+                .factory(ValidatorFileParser.class, DefaultValidatorFileParser.class, Scope.SINGLETON)
+                .factory(PatternMatcher.class, WildcardHelper.class, Scope.SINGLETON)
+   

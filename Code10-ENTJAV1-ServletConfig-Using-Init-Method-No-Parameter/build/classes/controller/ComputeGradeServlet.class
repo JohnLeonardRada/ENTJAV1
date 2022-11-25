@@ -1,0 +1,30 @@
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/hibernate/envers/entities/mapper/CompositeMapperBuilder.html" title="interface in org.hibernate.envers.entities.mapper">CompositeMapperBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/MultiPropertyMapper.html#addComponent(org.hibernate.envers.entities.PropertyData, java.lang.String)">addComponent</A></B>(<A HREF="../../../../../org/hibernate/envers/entities/PropertyData.html" title="class in org.hibernate.envers.entities">PropertyData</A>&nbsp;propertyData,
+             <A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;componentClassName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/MultiPropertyMapper.html#addComposite(org.hibernate.envers.entities.PropertyData, org.hibernate.envers.entities.mapper.PropertyMapper)">addComposite</A></B>(<A HREF="../../../../../org/hibernate/envers/entities/PropertyData.html" title="class in org.hibernate.envers.entities">PropertyData</A>&nbsp;propertyData,
+             <A HREF="../../../../../org/hibernate/envers/entities/mapper/PropertyMapper.html" title="interface in org.hibernate.envers.entities.mapper">PropertyMapper</A>&nbsp;propertyMapper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="../../../../../org/hibernate/envers/entities/PropertyData.html" title="class in org.hibernate.envers.entities">PropertyData</A>,<A HREF="../../../../../org/hibernate/envers/entities/mapper/PropertyMapper.html" title="interface in org.hibernate.envers.entities.mapper">PropertyMapper</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/MultiPropertyMapper.html#getProperties()">getProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/hibernate/envers/entities/mapper/MultiPropertyMapper.html#map(org.hibernate.engine.SessionIm

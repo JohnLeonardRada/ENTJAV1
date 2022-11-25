@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Sales Amount Computation</title>
+</head>
+
+<body>
+	<h2>Employee Sales Amount Computation</h2>
+	<fieldset>
+		<legend>Employee Sales Amount Computation Form</legend>
+		<form action = 'computeSales.action' method = 'POST'>
+		
+			<p>Enter Employee ID:
+				<input type = 'text' name = 'id' size = '15' required = "required"/>
+			</p>
+			
+			<p>Enter Employee Name:
+				<input type = 'text' name = 'name' size = '35' required = "required"/>
+			</p>
+			
+			<p>Enter Sales Code:
+				<input type = 'text' name = 'salesCode' min = '1' max = '100' required = "required"/>
+			</p>
+			
+			<p>Enter Enter Sales Amount:
+				<input type = 'text' name = 'salesAmount' min = '1' max = '15000' required = "required"/>
+			</p>
+			
+			<p>
+				<input type = 'submit' value = 'Compute Sales'/>&nbsp;&nbsp;&nbsp;
+				<input type = 'reset'/>
+			</p>
+			
+		</form>
+	</fieldset>
+	<hr/>
+	<p><i>&copy; 2020 iAcademy Game Changers</i></p>
+</body>
+</html>

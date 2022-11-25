@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Code09-ENTJAV1-ServletConfig-No-Init-Method">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="Code09-ENTJAV1-ServletConfig-No-Init-Method"/>
+        <property name="java-output-path" value="/Code09-ENTJAV1-ServletConfig-No-Init-Method/build/classes"/>
+    </wb-module>
+</project-modules>

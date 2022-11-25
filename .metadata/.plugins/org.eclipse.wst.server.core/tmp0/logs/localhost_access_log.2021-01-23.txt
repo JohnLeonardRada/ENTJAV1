@@ -1,0 +1,9 @@
+127.0.0.1 - - [23/Jan/2021:14:22:27 +0800] "GET / HTTP/1.1" 404 748
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:22:28 +0800] "GET /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/ HTTP/1.1" 200 969
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:22:39 +0800] "POST /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/computeGrade.action HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:22:39 +0800] "GET /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/display.html HTTP/1.1" 200 520
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:22:55 +0800] "GET /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:22:58 +0800] "GET /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:22:59 +0800] "GET /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/ HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:23:08 +0800] "GET /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/display.html HTTP/1.1" 200 520
+0:0:0:0:0:0:0:1 - - [23/Jan/2021:14:23:10 +0800] "GET /Code17-ENTJAV1-Using-ServletContext-Binding-SendRedirect-ErrorPage-Declarative-Exception-Handling-404-Error/index.html HTTP/1.1" 200 969

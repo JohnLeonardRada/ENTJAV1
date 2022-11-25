@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>iAcademy Grade Computation</title>
+</head>
+<body>
+	<img src='images/iacademy.jpg'>
+	<h2>iAcademy Grade Computation</h2>
+	<fieldset>
+		<legend>Grade Compute Form</legend>
+		<form action='computegrade.action' method="post">
+			<p>Enter Student Id:
+				<input type='text' name='id' size='15' required="required" value="234242334"/>
+			</p>
+			<p>Enter Name:
+				<input type='text' name='name' size='35' required="required" value="James Gosling"/>
+			</p>
+			<p>Enter Midterm Grade:
+				<input type='number' name='midterm' min='1' max="100" required="required" value="90"/>
+			</p>
+			<p>Enter Pre-Final Grade:
+				<input type='number' name='preFinal' min='1' max="100" required="required" value="100"/>
+			</p>
+			<p>
+				<input type='submit' value='Compute Final Grade'/>&nbsp;&nbsp;&nbsp;
+				<input type='reset'/>
+			</p>
+		</form>
+	</fieldset>
+	<hr/>
+	<p><i>&copy; 2020 iAcademy Games Changers</i></p>
+</body>
+</html>

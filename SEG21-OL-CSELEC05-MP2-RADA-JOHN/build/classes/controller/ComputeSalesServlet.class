@@ -1,0 +1,41 @@
+ry()"><!-- --></A><H3>
+InjectionSettingsFactory</H3>
+<PRE>
+public <B>InjectionSettingsFactory</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setConnectionProviderInjectionData(java.util.Map)"><!-- --></A><H3>
+setConnectionProviderInjectionData</H3>
+<PRE>
+public void <B>setConnectionProviderInjectionData</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&nbsp;connectionProviderInjectionData)</PRE>
+<DL>
+<DD>Map<String,Object> where the key represents the javabean property in witch
+ Object will be injected
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>connectionProviderInjectionData</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createConnectionProvider(java.util.Properties)"><!-- --></A><H3>
+createConnectionProvider</H3>
+<PRE>
+protected <A HREF="../../../org/hibernate/connection/ConnectionProvider.html" title="interface in org.hibernate.connection">ConnectionProvider</A> <B>createConnectionProvider</B>(<A HREF="http://java.sun.com/j2se/1.5.0/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</A>&nbsp;properties)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../org/hibernate/cfg/SettingsFactory.html#createConnectionProvider(java.util.Properties)">createConnectionProvider</A></CODE> in class <CODE><A HREF="../../../org/hibernate/cfg/SettingsFactory.html" title="class in org.hibernate.cfg">SettingsFactory</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>

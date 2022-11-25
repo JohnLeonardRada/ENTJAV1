@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Code19-ENTJAV1-Using-Cookies</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+    <description>Half of the grade for the Final grade</description>
+    <param-name>midtermHalfGrade</param-name>
+    <param-value>0.5</param-value>
+  </context-param>
+  
+  <context-param>
+    <param-name>preFinalHalfGrade</param-name>
+    <param-value>0.5</param-value>
+  </context-param>
+  
+  <context-param>
+    <description>passing grade</description>
+    <param-name>passingMark</param-name>
+    <param-value>50</param-value>
+  </context-param>
+  
+  <context-param>
+    <description>message if grade is passed</description>
+    <param-name>messagePassed</param-name>
+    <param-value>Time to study EntJav2</param-value>
+  </context-param>
+  
+  <context-param>
+    <description>message if grade is failed</description>
+    <param-name>messageFailed</param-name>
+    <param-value>You have to study the basic concepts.</param-value>
+  </context-param>
+  
+  <servlet>
+    <servlet-name>ComputeGradeServlet</servlet-name>
+    <servlet-class>controller.ComputeGradeServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>DisplayViewServlet</servlet-name>
+    <servlet-class>view.DisplayViewServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ErrorPageServlet</servlet-name>
+    <servlet-class>view.ErrorPageServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DeleteCookiesServlet</servlet-name>
+  	<servlet-class>controller.DeleteCookiesServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ComputeGradeServlet</servlet-name>
+    <url-pattern>/computegrade.action</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>DisplayViewServlet</servlet-name>
+    <url-pattern>/display.html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ErrorPageServlet</servlet-name>
+    <url-pattern>/error.html</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteCookiesServlet</servlet-name>
+  	<url-pattern>/clearcookies.action</url-pattern>
+  </servlet-mapping>
+  
+  <error-page>
+    <exception-type>java.lang.NullPointerException</exception-type>
+    <location>/error.html?errCode=1</location>
+  </error-page>
+  
+  <error-page>
+    <exception-type>java.lang.Exception</exception-type>
+    <location>/error.html?errCode=2</location>
+  </error-page>
+  
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error404.html</location>
+  </error-page>
+</web-app>

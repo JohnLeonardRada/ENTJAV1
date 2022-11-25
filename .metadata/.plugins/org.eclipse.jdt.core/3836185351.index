@@ -1,0 +1,804 @@
+ng proxy들에 사용할 인터페이"
+"스를 지정한다. 당신은 클래스 그 자체의 이름을 지정할 수 도 있다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>dynamic-update</literal> (optional - defaults to <literal>false</"
+"literal>): specifies that <literal>UPDATE</literal> SQL should be generated "
+"at runtime and can contain only those columns whose values have changed."
+msgstr ""
+"<literal>dynamic-update</literal> (옵션 - 디폴트는 <literal>false</"
+"literal>): <literal>UPDATE</literal> SQL이 실행 시에 생성되고 그들 컬럼들의 "
+"값들이 변경된 그들 컬럼들 만을 포함할 것인지를 지정한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>dynamic-insert</literal> (optional - defaults to <literal>false</"
+"literal>): specifies that <literal>INSERT</literal> SQL should be generated "
+"at runtime and contain only the columns whose values are not null."
+msgstr ""
+"<literal>dynamic-insert</literal> (옵션 - 디폴트는 <literal>false</"
+"literal>): 생성될 <literal>INSERT</literal>이 실행 시에 생성되고 그들 컬럼들"
+"의 값이 null이 아닌 컬럼들 만을 포함할 것인지를 지정한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>select-before-update</literal> (optional - defaults to "
+"<literal>false</literal>): specifies that Hibernate should <emphasis>never</"
+"emphasis> perform an SQL <literal>UPDATE</literal> unless it is certain that "
+"an object is actually modified. Only when a transient object has been "
+"associated with a new session using <literal>update()</literal>, will "
+"Hibernate perform an extra SQL <literal>SELECT</literal> to determine if an "
+"<literal>UPDATE</literal> is actually required."
+msgstr ""
+"<literal>select-before-update</literal> (옵션 - 디폴트는 <literal>false</"
+"literal>): 객체가 실제로 변경되는 것이 확실하지 않는 한, Hibernate가 SQL "
+"<literal>UPDATE</literal>를 <emphasis>결코</emphasis> 실행하지 않을 것임을 지"
+"정한다. 어떤 경우들에서(실제로 transient 객체가 <literal>update()</literal>"
+"를 사용하여 새로운 session에 연관되었을 때에만), 이것은 하나의 "
+"<literal>UPDATE</literal>가 실제로 필요한 경우인지 여부를 결정하기 위해 "
+"Hibernate는 특별한 SQL <literal>SELECT</literal>를 실행할 것임을 의미한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>polymorphism</literal> (optional - defaults to <literal>implicit</"
+"literal>): determines whether implicit or explicit query polymorphism is "
+"used."
+msgstr ""
+"<literal>polymorphism</literal> (옵션 - 디폴트는 <literal>implicit</"
+"literal>): implicit 질의 다형성이나 explicit 질의 다형성 중 어느 것이 사용될 "
+"것인지를 결정한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>where</literal> (optional): specifies an arbitrary SQL "
+"<literal>WHERE</literal> condition to be used when retrieving objects of "
+"this class."
+msgstr ""
+"<literal>where</literal> (옵션) 이 클래스의 객체들을 검색할 때 사용될 임의적"
+"인 SQL <literal>WHERE</literal> 조건을 지정한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>persister</literal> (optional): specifies a custom "
+"<literal>ClassPersister</literal>."
+msgstr ""
+"<literal>persister</literal> (옵션): 맞춤형 <literal>ClassPersister</literal>"
+"를 지정한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>batch-size</literal> (optional - defaults to <literal>1</literal>): "
+"specifies a \"batch size\" for fetching instances of this class by "
+"identifier."
+msgstr ""
+"<literal>batch-size</literal> (옵션 - 디폴트는 <literal>1</literal>) 식별자"
+"에 의해 이 클래스의 인스턴스들을 페치시키는 \"배치 사이즈\"를 지정한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>optimistic-lock</literal> (optional - defaults to <literal>version</"
+"literal>): determines the optimistic locking strategy."
+msgstr ""
+"<literal>optimistic-lock</literal> (옵션 - 디폴트는 <literal>version</"
+"literal>): optimistic 잠금 방도를 결정한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>lazy</literal> (optional): lazy fetching can be disabled by setting "
+"<literal>lazy=\"false\"</literal>."
+msgstr ""
+"<literal>lazy</literal> (옵션): <literal>lazy=\"false\"</literal>를 설정함으"
+"로써 Lazy fetching이 전체적으로 사용불가능하게 될 수 있다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>entity-name</literal> (optional - defaults to the class name): "
+"Hibernate3 allows a class to be mapped multiple times, potentially to "
+"different tables. It also allows entity mappings that are represented by "
+"Maps or XML at the Java level. In these cases, you should provide an "
+"explicit arbitrary name for the entity. See <xref linkend=\"persistent-"
+"classes-dynamicmodels\" /> and <xref linkend=\"xml\" /> for more information."
+msgstr ""
+"<literal>entity-name</literal>(옵션, 디폴트는 클래스 이름): Hibernate3는 하나"
+"의 클래스가 (잠정적으로 다른 테이블들로) 여러번 매핑되는 것을 허용해주고, "
+"Java 레벨에서 Map 또는 XML에 의해 표현 되는 엔티티 매핑들을 허용한다. 이들 경"
+"우들에서, 당신은 그 엔티티에 대한 명시적인 임의의 이름을 제공해야 한다. "
+"<literal>entity-name</literal> (옵션): Hibernate3는 하나의 클래스가 (잠정적으"
+"로 다른 테이블들로) 여러 번 매핑되는 것을 허용하며, 자바 레벨에서 Map들 또는 "
+"XML에 의해 표현되는 엔티티 매핑들을 허용한다. 이들 경우들에서, 당신은 그 엔티"
+"티들에 대한 명시적인 임의의 이름을 제공해야 한다. 추가 정보는 <xref linkend="
+"\"persistent-classes-dynamicmodels\"/>과 <xref linkend=\"xml\"/>을 보라."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>check</literal> (optional): an SQL expression used to generate a "
+"multi-row <emphasis>check</emphasis> constraint for automatic schema "
+"generation."
+msgstr ""
+"<literal>check</literal> (옵션): 자동적인 스키마 생성을 위한 다중-행 "
+"<emphasis>check</emphasis> constraint를 생성시키는데 사용되는 SQL 표현식."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>rowid</literal> (optional): Hibernate can use ROWIDs on databases. "
+"On Oracle, for example, Hibernate can use the <literal>rowid</literal> extra "
+"column for fast updates once this option has been set to <literal>rowid</"
+"literal>. A ROWID is an implementation detail and represents the physical "
+"location of a stored tuple."
+msgstr ""
+"<literal>rowid</literal> (옵션): Hibernate는 지원되는 데이터베이스들, 예를 들"
+"어 Oracle 상에서 이른바 ROWID들을 사용할 수 있고, Hibernate는 당신이 이 옵션"
+"을 <literal>rowid</literal>로 설정하는 경우에 빠른 업데이트를 위한 특별한 "
+"<literal>rowid</literal> 컬럼을 사용할 수 있다. ROWID는 구현 상세이고 저장된 "
+"튜플(tuple)의 물리적이니 위치를 표현한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>subselect</literal> (optional): maps an immutable and read-only "
+"entity to a database subselect. This is useful if you want to have a view "
+"instead of a base table. See below for more information."
+msgstr ""
+"<literal>subselect</literal> (옵션): 불변의 읽기 전용 엔티티를 데이터베이스 "
+"subselect로 매핑시킨다. 당신이 기본 테이블 대신에 뷰를 갖고자 원할 경우에 유"
+"용하지만, 사용을 자제하라. 추가 정보는 아래를 보라."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>abstract</literal> (optional): is used to mark abstract "
+"superclasses in <literal>&lt;union-subclass&gt;</literal> hierarchies."
+msgstr ""
+"<literal>abstract</literal> (옵션): <literal>&lt;union-subclass&gt;</"
+"literal> 계층 구조들 내에서 abstract 슈퍼클래스들을 마크하는데 사용된다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"It is acceptable for the named persistent class to be an interface. You can "
+"declare implementing classes of that interface using the <literal>&lt;"
+"subclass&gt;</literal> element. You can persist any <emphasis>static</"
+"emphasis> inner class. Specify the class name using the standard form i.e. "
+"<literal>e.g.Foo$Bar</literal>."
+msgstr ""
+"명명된 영속 클래스가 인터페이스가 되는 것은 완전히 수용가능하다. 그런 다음 당"
+"신은 <literal>&lt;subclass&gt;</literal> 요소를 사용하여 그 인터페이스에 대"
+"한 구현 클래스들을 선언할 것이다. 당신은 임의의 <emphasis>static</emphasis> "
+"inner 클래스를 영속화 시킬 수 있다. 당신은 표준 형식, 예를 들어 <literal>eg."
+"Foo$Bar</literal>를 사용하여 클래스 이름을 지정해야 한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"Immutable classes, <literal>mutable=\"false\"</literal>, cannot be updated "
+"or deleted by the application. This allows Hibernate to make some minor "
+"performance optimizations."
+msgstr ""
+"불변의 클래스, <literal>mutable=\"false\"</literal>는 어플리케이션에 의해 업"
+"데이트되지 않을 것이거나 삭제되지 않을 것이다. 이것은 Hibernate로 하여금 어"
+"떤 마이너 퍼포먼스 최적화를 행하게끔 허용해준다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"The optional <literal>proxy</literal> attribute enables lazy initialization "
+"of persistent instances of the class. Hibernate will initially return CGLIB "
+"proxies that implement the named interface. The persistent object will load "
+"when a method of the proxy is invoked. See \"Initializing collections and "
+"proxies\" below."
+msgstr ""
+"선택적인 <literal>proxy</literal> 속성은 그 클래스의 영속 인스턴스들에 대한 "
+"lazy 초기화를 가능하게 해준다. Hibernate는 명명된 인터페이스를 구현하는 "
+"CGLIB 프락시들을 초기에 반환할 것이다. 실제 영속 객체는 프락시의 메소드가 호"
+"출될 때 로드될 것이다. 아래 \"Lazy 초기화를 위한 프락시들\"을 보라."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<emphasis>Implicit</emphasis> polymorphism means that instances of the class "
+"will be returned by a query that names any superclass or implemented "
+"interface or class, and that instances of any subclass of the class will be "
+"returned by a query that names the class itself. <emphasis>Explicit</"
+"emphasis> polymorphism means that class instances will be returned only by "
+"queries that explicitly name that class. Queries that name the class will "
+"return only instances of subclasses mapped inside this <literal>&lt;class&gt;"
+"</literal> declaration as a <literal>&lt;subclass&gt;</literal> or "
+"<literal>&lt;joined-subclass&gt;</literal>. For most purposes, the default "
+"<literal>polymorphism=\"implicit\"</literal> is appropriate. Explicit "
+"polymorphism is useful when two different classes are mapped to the same "
+"table This allows a \"lightweight\" class that contains a subset of the "
+"table columns."
+msgstr ""
+"<emphasis>Implicit</emphasis> 다형성은 클래스의 인스턴스들이 어떤 서브클래스"
+"나 구현된 인터페이스 또는 클래스를 명명하는 질의에 의해 반환될 것임을 의미하"
+"고 그 클래스의 어떤 서브클래스에 대한 인스턴스들이 그 클래스 자체를 명명하는 "
+"질의에 의해 반환될 것임을 의미한다. <emphasis>Explicit</emphasis> 다형성은 클"
+"래스 인스턴스들이 그 클래스를 명시적으로 명명하는 질의들에 의해서만 반환될 것"
+"임을 의미고 그 클래스를 명명하는 질의들이 이 <literal>&lt;class&gt;</"
+"literal> 선언 내부에서 <literal>&lt;subclass&gt;</literal> 또는 <literal>&lt;"
+"joined-subclass&gt;</literal>로 매핑된 서브 클래스들의 인스턴스들 만을 반환하"
+"게 될 것임을 의미한다. 대부분의 용도로, 디폴트인 <literal>polymorphism="
+"\"implicit\"</literal>가 적절하다.두 개의 다른 클래스들이 동일한 테이블로 매"
+"핑될 때 Explicit 다형성이 유용하다(이것은 테이블 컬럼들의 서브셋을 포함하는 "
+"\"경량급\" 클래스를 허용한다)."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"The <literal>persister</literal> attribute lets you customize the "
+"persistence strategy used for the class. You can, for example, specify your "
+"own subclass of <literal>org.hibernate.persister.EntityPersister</literal>, "
+"or you can even provide a completely new implementation of the interface "
+"<literal>org.hibernate.persister.ClassPersister</literal> that implements, "
+"for example, persistence via stored procedure calls, serialization to flat "
+"files or LDAP. See <literal>org.hibernate.test.CustomPersister</literal> for "
+"a simple example of \"persistence\" to a <literal>Hashtable</literal>."
+msgstr ""
+"<literal>persister</literal> 속성은 클래스에 사용되는 영속화 방도를 당신이 커"
+"스트마이징 할 수 있도록 해준다. 예를 들어 당신은 <literal>org.hibernate."
+"persister.EntityPersister</literal>에 대한 당신 자신의 서브클래스를 지정할 수"
+"도 있거나 당신은 심지어 예를 들어 플랫 파일들이나 LDAP로의 직렬화,내장 프로시"
+"저 호출들을 통해 영속화를 구현하는 인터페이스 <literal>org.hibernate."
+"persister.ClassPersister</literal>에 대한 완전히 새로운 구현을 제공할 수도 있"
+"다. (<literal>Hashtable</literal>로의 \"영속성\"에 관한) 간단한 예제는 "
+"<literal>org.hibernate.test.CustomPersister</literal>를 보라."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"The <literal>dynamic-update</literal> and <literal>dynamic-insert</literal> "
+"settings are not inherited by subclasses, so they can also be specified on "
+"the <literal>&lt;subclass&gt;</literal> or <literal>&lt;joined-subclass&gt;</"
+"literal> elements. Although these settings can increase performance in some "
+"cases, they can actually decrease performance in others."
+msgstr ""
+"<literal>dynamic-update</literal> 설정과 <literal>dynamic-insert</literal> 설"
+"정은 서브클래스들에 의해 상속되지 않고 따라서 또한 <literal>&lt;subclass&gt;"
+"</literal> 또는 <literal>&lt;joined-subclass&gt;</literal> 요소들 상에 지정"
+"될 수도 있음을 노트하라. 이들 설정들은 몇몇 경우들에서 퍼포먼스를 증가시키지"
+"만 다른 경우들에서는 퍼포먼스를 실제로 감소시킬 수도 있다. 적절하게 사용하라."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"Use of <literal>select-before-update</literal> will usually decrease "
+"performance. It is useful to prevent a database update trigger being called "
+"unnecessarily if you reattach a graph of detached instances to a "
+"<literal>Session</literal>."
+msgstr ""
+"<literal>select-before-update</literal> 사용은 대개 퍼포먼스를 감소시킬 것이"
+"다. 당신이 detached 인스턴스들의 그래프를 <literal>Session</literal>에 다시 "
+"첨부할 경우에 그것은 데이터베이스 업데이트 트리거가 불필요하게 호출되는 것을 "
+"방지하는데 매우 유용하다."
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"If you enable <literal>dynamic-update</literal>, you will have a choice of "
+"optimistic locking strategies:"
+msgstr ""
+"<literal>dynamic-update</literal>를 사용가능하게 할 경우, 당신은 다음 "
+"optimistic 잠금 전략들을 선택하게 될 것이다:"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<literal>version</literal>: check the version/timestamp columns"
+msgstr "<literal>version</literal>은 version/timestamp 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<literal>all</literal>: check all columns"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>dirty</literal>: check the changed columns, allowing some "
+"concurrent updates"
+msgstr ""
+"<literal>dirty</literal>는 몇몇 동시성 업데이트들을 허용하여, 변경된 컬럼들"
+"을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid "<literal>none</literal>: do not use optimistic locking"
+msgstr "<literal>none</literal>은 optimistic 잠금을 사용하지 않는다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"It is <emphasis>strongly</emphasis> recommended that you use version/"
+"timestamp columns for optimistic locking with Hibernate. This strategy "
+"optimizes performance and correctly handles modifications made to detached "
+"instances (i.e. when <literal>Session.merge()</literal> is used)."
+msgstr ""
+"우리는 당신이 Hibernate에서 optimistic 잠금을 위해 version/timestamp 컬럼들"
+"을 사용할 것을 <emphasis>매우</emphasis> 강력하게 권장한다. 이것은 퍼포먼스"
+"에 대해 최적의 방도이고 detached 인스턴스들에 대해 행해진 변경들을 정확하게 "
+"핸들링하는 유일한 방도이다(예를 들어 <literal>Session.merge()</literal>가 사"
+"용될 때)."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"There is no difference between a view and a base table for a Hibernate "
+"mapping. This is transparent at the database level, although some DBMS do "
+"not support views properly, especially with updates. Sometimes you want to "
+"use a view, but you cannot create one in the database (i.e. with a legacy "
+"schema). In this case, you can map an immutable and read-only entity to a "
+"given SQL subselect expression:"
+msgstr ""
+"Hibernate 매핑의 경우에 베이스 테이블과 뷰 사이에 차이점이 존재하지 않는다. "
+"왜냐하면 이것이 데이터베이스 레벨에서는 투명하다고 기대되기 때문이다(몇몇 "
+"DBMS는 뷰를 고유하게 지원하지 않고 특히 뷰 업데이트를 지원하지 않음을 노트하"
+"라). 때때로 당신이 뷰를 사용하고자 원하지만, (예를 들어 리거시 스키마로) 데이"
+"터베이스 속에 뷰를 생성시킬 수 없다. 이 경우에, 당신은 불변의 읽기 전용 엔티"
+"티를 주어진 SQL subselect 표현식으로 매핑시킬 수 있다:"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"Declare the tables to synchronize this entity with, ensuring that auto-flush "
+"happens correctly and that queries against the derived entity do not return "
+"stale data. The <literal>&lt;subselect&gt;</literal> is available both as an "
+"attribute and a nested mapping element."
+msgstr ""
+"auto-flush가 정확하게 발생하도록 하고, 그리고 파생된 엔티티에 대한 질의들이 "
+"쓸효성 없는 데이터를 반환하지 않도록 함으로써, 이 엔티티와 동기화 될 테이블"
+"을 선언하라. <literal>&lt;subselect&gt;</literal>는 속성과 내포된 매핑 요소 "
+"양자로서 이용 가능하다."
+
+#. Tag: title
+#, no-c-format
+msgid "id"
+msgstr "id"
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"Mapped classes <emphasis>must</emphasis> declare the primary key column of "
+"the database table. Most classes will also have a JavaBeans-style property "
+"holding the unique identifier of an instance. The <literal>&lt;id&gt;</"
+"literal> element defines the mapping from that property to the primary key "
+"column."
+msgstr ""
+"매핑된 클래스들은 데이터베이스 테이블의 프라이머리 키 컬럼을 선언<emphasis>해"
+"야 한다</emphasis>. 대부분의 클래스들은 또한 인스턴스의 유일 식별자를 소유하"
+"는 자바빈즈-스타일 프로퍼티를 가질 것이다. <literal>&lt;id&gt;</literal> 요소"
+"는 그 프로퍼티로부터 프라이머리 키 컬럼으로의 매핑을 정의한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>name</literal> (optional): the name of the identifier property."
+msgstr "<literal>name</literal> (옵션): 식별자 프로퍼티의 이름."
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"<literal>type</literal> (optional): a name that indicates the Hibernate type."
+msgstr "<literal>type</literal> (옵션): Hibernate 타입을 나타내는 이름."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>column</literal> (optional - defaults to the property name): the "
+"name of the primary key column."
+msgstr ""
+"<literal>column</literal> (옵션 - 디폴트는 프로퍼티 이름): 프라이머리 키 컬럼"
+"의 이름."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>unsaved-value</literal> (optional - defaults to a \"sensible\" "
+"value): an identifier property value that indicates an instance is newly "
+"instantiated (unsaved), distinguishing it from detached instances that were "
+"saved or loaded in a previous session."
+msgstr ""
+"<literal>unsaved-value</literal> (옵션 - 디폴트는 \"sensible\" 값): 이전 세션"
+"에서 저장되었거나 로드되었던 detached(분리된) 인스턴스들로부터 그것을 구분지"
+"우도록, 인스턴스가 새로이 초기화되어 있음(저장되어 있지 않음)을 나타내는 식별"
+"자 프로퍼티 값."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"<literal>access</literal> (optional - defaults to <literal>property</"
+"literal>): the strategy Hibernate should use for accessing the property "
+"value."
+msgstr ""
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 액세스하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 접근하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 액세스하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 접근하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 접근하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 접근하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 접근 하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 액세스하는데 사용할 방도.\n"
+"#-#-#-#-#  - (PACKAGE VERSION)  #-#-#-#-#\n"
+"<literal>access</literal> (옵션 - 디폴트는 <literal>property</literal>): "
+"Hibernate가 프로퍼티 값에 접근하는데 사용할 방도."
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"If the <literal>name</literal> attribute is missing, it is assumed that the "
+"class has no identifier property."
+msgstr ""
+"<literal>name</literal> 속성이 누락되면, 클래스는 식별자 프로퍼티를 갖지 않는"
+"다고 가정된다."
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"The <literal>unsaved-value</literal> attribute is almost never needed in "
+"Hibernate3."
+msgstr ""
+"<literal>unsaved-value</literal> 속성은 Hibernate3에서는 거의 필요하지 않다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"There is an alternative <literal>&lt;composite-id&gt;</literal> declaration "
+"that allows access to legacy data with composite keys. Its use is strongly "
+"discouraged for anything else."
+msgstr ""
+"composite 키들로서 리거시 데이터에 액세스하는 것을 허용해주는 대체적인 "
+"<literal>&lt;composite-id&gt;</literal> 선언이 존재한다. 우리는 그 밖의 어떤"
+"것에 대한 그것의 사용에 대해 강력하게 반대한다."
+
+#. Tag: title
+#, no-c-format
+msgid "Generator"
+msgstr "Generator"
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"The optional <literal>&lt;generator&gt;</literal> child element names a Java "
+"class used to generate unique identifiers for instances of the persistent "
+"class. If any parameters are required to configure or initialize the "
+"generator instance, they are passed using the <literal>&lt;param&gt;</"
+"literal> element."
+msgstr ""
+"선택적인 <literal>&lt;generator&gt;</literal> 자식 요소는 영속 클래스의 인스"
+"턴스들에 대한 유일 식별자들을 생성시키는데 사용되는 자바 클래스를 명명한다. "
+"만일 임의의 파라미터들이 생성기 인스턴스를 구성하거나 초기화 시키는데 필요할 "
+"경우, 그것들은 <literal>&lt;param&gt;</literal> 요소 를 사용하여 전달된다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"All generators implement the interface <literal>org.hibernate.id."
+"IdentifierGenerator</literal>. This is a very simple interface. Some "
+"applications can choose to provide their own specialized implementations, "
+"however, Hibernate provides a range of built-in implementations. The "
+"shortcut names for the built-in generators are as follows:"
+msgstr ""
+"모든 생성기들은 <literal>org.hibernate.id.IdentifierGenerator</literal> 인터"
+"페이스를 구현한다. 이것은 매우 간단한 인터페이스이다; 몇몇 어플리케이션들은 "
+"그것들 자신의 특화된 구현들을 제공하도록 선택할 수 있다. 하지만 Hibernate는 "
+"미리 빈드된 구현들의 영역들을 제공한다. 빌드-인 생성기(generator)들에 대한 단"
+"축 이름들이 존재한다: <placeholder-1/>"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>increment</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"generates identifiers of type <literal>long</literal>, <literal>short</"
+"literal> or <literal>int</literal> that are unique only when no other "
+"process is inserting data into the same table. <emphasis>Do not use in a "
+"cluster.</emphasis>"
+msgstr ""
+"동일한 테이블 속으로 데이터를 입력하는 다른 프로세스가 없을 때에만 유일한 "
+"<literal>long</literal>, <literal>short</literal> 또는 <literal>int</"
+"literal> 타입의 식별자들을 생성시킨다. <emphasis>클러스터 내에서는 사용하지 "
+"말라.</emphasis>"
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>identity</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"supports identity columns in DB2, MySQL, MS SQL Server, Sybase and "
+"HypersonicSQL. The returned identifier is of type <literal>long</literal>, "
+"<literal>short</literal> or <literal>int</literal>."
+msgstr ""
+"DB2, MySQL, MS SQL Server, Sybase, HypersonicSQL에서 식별 컬럼들을 지원한다. "
+"반환되는 식별자는 <literal>long</literal>, <literal>short</literal> 또는 "
+"<literal>int</literal> 타입이다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>sequence</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"uses a sequence in DB2, PostgreSQL, Oracle, SAP DB, McKoi or a generator in "
+"Interbase. The returned identifier is of type <literal>long</literal>, "
+"<literal>short</literal> or <literal>int</literal>"
+msgstr ""
+"DB2, PostgreSQL, Oracle, SAP DB, McKoi에서 시퀀스를 사용하거나 Interbase에서 "
+"생성기(generator)를 사용한다. 반환되는 식별자는 <literal>long</literal>, "
+"<literal>short</literal> 또는 <literal>int</literal> 타입이다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>hilo</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"uses a hi/lo algorithm to efficiently generate identifiers of type "
+"<literal>long</literal>, <literal>short</literal> or <literal>int</literal>, "
+"given a table and column (by default <literal>hibernate_unique_key</literal> "
+"and <literal>next_hi</literal> respectively) as a source of hi values. The "
+"hi/lo algorithm generates identifiers that are unique only for a particular "
+"database."
+msgstr ""
+"테이블과 컬럼(디폴트로 각각 <literal>hibernate_unique_key</literal>와 "
+"<literal>next_hi</literal>)이 hi 값들의 소스로서 주어지면, <literal>long</"
+"literal>, <literal>short</literal> 또는 <literal>int</literal> 타입의 식별자"
+"들을 효과적으로 생성시키는데 hi/lo 알고리즘을 사용한다. hi/lo 알고리즘은 특"
+"정 데이터베이스에 대해서만 유일한 식별자들을 생성시킨다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>seqhilo</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, no-c-format
+msgid ""
+"uses a hi/lo algorithm to efficiently generate identifiers of type "
+"<literal>long</literal>, <literal>short</literal> or <literal>int</literal>, "
+"given a named database sequence."
+msgstr ""
+"명명된 데이터베이스 시퀀스가 주어지면, <literal>long</literal>, "
+"<literal>short</literal> 또는 <literal>int</literal> 타입의 식별자들을 효과적"
+"으로 생성시키는데 hi/lo 알고리즘을 사용한다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>uuid</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"uses a 128-bit UUID algorithm to generate identifiers of type string that "
+"are unique within a network (the IP address is used). The UUID is encoded as "
+"a string of 32 hexadecimal digits in length."
+msgstr ""
+"네트웍 내에서 유일한(IP 주소가 사용된다) string 타입의 식별자들을 생성시키기 "
+"위해 128 비트 UUID 알고리즘을 사용한다. UUID는 길이가 32인 16진수들의 문자열"
+"로서 인코딩 된다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>guid</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, no-c-format
+msgid "uses a database-generated GUID string on MS SQL Server and MySQL."
+msgstr "MS SQL Server와 MySQL 상에서 데이터베이스 생성 GUID 문자열을 사용한다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>native</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"selects <literal>identity</literal>, <literal>sequence</literal> or "
+"<literal>hilo</literal> depending upon the capabilities of the underlying "
+"database."
+msgstr ""
+"기본 데이터베이스의 가용성들에 의존하여 <literal>identity</literal>, "
+"<literal>sequence</literal> 또는 <literal>hilo</literal>를 찾아낸다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>assigned</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"lets the application assign an identifier to the object before <literal>save"
+"()</literal> is called. This is the default strategy if no <literal>&lt;"
+"generator&gt;</literal> element is specified."
+msgstr ""
+"어플리케이션으로 하여금 <literal>save()</literal>가 호출되기 전에 식별자를 객"
+"체에 할당하도록 한다. <literal>&lt;generator&gt;</literal> 요소가 지정되지 않"
+"을 경우 이것이 디폴트 방도이다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>select</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"retrieves a primary key, assigned by a database trigger, by selecting the "
+"row by some unique key and retrieving the primary key value."
+msgstr ""
+"어떤 유일 키에 의해 행을 select하고 프라이머리 키 값을 검색함으로써 데이터베"
+"이스 트리거에 의해 할당된 프라이머리 키를 검색한다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>foreign</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"uses the identifier of another associated object. It is usually used in "
+"conjunction with a <literal>&lt;one-to-one&gt;</literal> primary key "
+"association."
+msgstr ""
+"또 다른 연관된 객체의 식별자를 사용한다. 대개 <literal>&lt;one-to-one&gt;</"
+"literal> 프라이머리 키 연관관계와 함께 사용된다."
+
+#. Tag: term
+#, fuzzy, no-c-format
+msgid "<literal>sequence-identity</literal>"
+msgstr "<literal>all</literal>은 모든 컬럼들을 체크한다"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"a specialized sequence generation strategy that utilizes a database sequence "
+"for the actual value generation, but combines this with JDBC3 "
+"getGeneratedKeys to return the generated identifier value as part of the "
+"insert statement execution. This strategy is only supported on Oracle 10g "
+"drivers targeted for JDK 1.4. Comments on these insert statements are "
+"disabled due to a bug in the Oracle drivers."
+msgstr ""
+"실제 값 생성을 위해 데이터베이스 시퀀스를 활용하지만, 생성된 식별자 값을 "
+"insert 문장 실행의 부분으로서 실제로 반환시키기 위해 이것을 JDBC3 "
+"getGeneratedKeys와 결합시킨 특화된 시퀀스 생성 방도. 이 방도는 JDK 1.4에 대상"
+"화된 Oracle 10g 드라이버들 상에서만 지원되는 거승로 알려져 있다. 이들 insert "
+"문장들에 대한 주석들은 Oracle 드라이버들 내에 있는 버그 때문에 사용불가능하"
+"게 되어 있음을 노트하라."
+
+#. Tag: title
+#, no-c-format
+msgid "Hi/lo algorithm"
+msgstr "Hi/lo algorithm"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"The <literal>hilo</literal> and <literal>seqhilo</literal> generators "
+"provide two alternate implementations of the hi/lo algorithm. The first "
+"implementation requires a \"special\" database table to hold the next "
+"available \"hi\" value. Where supported, the second uses an Oracle-style "
+"sequence."
+msgstr ""
+"<literal>hilo</literal>와 <literal>seqhilo</literal> 생성기들은 식별자 생성"
+"에 대한 마음에 드는 접근법인, hi/lo 알고리즘에 대한 두 개의 대체 구현들은 제"
+"공한다. 첫 번째 구현은 다음에 이용 가능한 \"hi\" 값을 수용하기 위한 \"특별한"
+"\" 데이터베이스 테이블을 필요로 한다. 두 번째는 (지원되는) Oracle 스타일의 시"
+"퀀스를 사용한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"Unfortunately, you cannot use <literal>hilo</literal> when supplying your "
+"own <literal>Connection</literal> to Hibernate. When Hibernate uses an "
+"application server datasource to obtain connections enlisted with JTA, you "
+"must configure the <literal>hibernate.transaction.manager_lookup_class</"
+"literal>."
+msgstr ""
+"불행히도 당신은 Hibernate에 당신 자신의 <literal>Connection</literal>을 제공"
+"할 때 <literal>hilo</literal>를 사용할 수 없다. Hibernate가 JTA의 도움을 받"
+"는 커넥션들을 얻기 위해 어플리케이션 서버 데이터소스를 사용할 때 당신은 "
+"<literal>hibernate.transaction.manager_lookup_class</literal>를 적절하게 구성"
+"해야 한다."
+
+#. Tag: title
+#, no-c-format
+msgid "UUID algorithm"
+msgstr "UUID 알고리즘"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"The UUID contains: IP address, startup time of the JVM that is accurate to a "
+"quarter second, system time and a counter value that is unique within the "
+"JVM. It is not possible to obtain a MAC address or memory address from Java "
+"code, so this is the best option without using JNI."
+msgstr ""
+"UUID 는 다음을 포함한다: IP 주소, JVM의 시작 시간(정확히 1/4 초), 시스템 시간"
+"과 (JVM 내에서 유일한) counter 값. Java 코드로부터 MAC 주소 또는 메모리 주소"
+"를 얻는 것은 불가능하여서, 이것은 우리가 JNI를 사용하지 않고서 행할 수 있는 "
+"최상의 것이다."
+
+#. Tag: title
+#, no-c-format
+msgid "Identity columns and sequences"
+msgstr "식별 컬럼들과 시퀀스들"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"For databases that support identity columns (DB2, MySQL, Sybase, MS SQL), "
+"you can use <literal>identity</literal> key generation. For databases that "
+"support sequences (DB2, Oracle, PostgreSQL, Interbase, McKoi, SAP DB) you "
+"can use <literal>sequence</literal> style key generation. Both of these "
+"strategies require two SQL queries to insert a new object. For example:"
+msgstr ""
+"식별 컬럼들을 지원하는 데이터베이스들(DB2, MySQL, Sybase, MS SQL)의 경우, 당"
+"신은 <literal>identity</literal> 키 생성을 사용할 수 있다. 시퀀스들을 지원하"
+"는 데이터베이스들(DB2, Oracle, PostgreSQL, Interbase, McKoi, SAP DB)의 경우, "
+"당신은 <literal>sequence</literal> 스타일 키 생성을 사용할 수도 있다. 이들 방"
+"도들 모두 새로운 객체를 insert하기 위해 두 개의 SQL 질의들을 필요로 한다."
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"For cross-platform development, the <literal>native</literal> strategy will, "
+"depending on the capabilities of the underlying database, choose from the "
+"<literal>identity</literal>, <literal>sequence</literal> and <literal>hilo</"
+"literal> strategies."
+msgstr ""
+"크로스 플랫폼 개발을 위해서, <literal>native</literal> 방도가 기준 데이터베이"
+"스들의 가용성들에 따라 <literal>identity</literal>, <literal>sequence</"
+"literal>, <literal>hilo</literal> 방도 중에서 선택될 것이다."
+
+#. Tag: title
+#, no-c-format
+msgid "Assigned identifiers"
+msgstr "할당된 식별자들"
+
+#. Tag: para
+#, fuzzy, no-c-format
+msgid ""
+"If you want the application to assign identifiers, as opposed to having "
+"Hibernate generate them, you can use the <literal>assigned</literal> "
+"generator. This special generator uses the identifier value 
